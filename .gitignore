@@ -2,3 +2,5 @@
 #/.packages
 #/.dart_tool
 #/example/ios/Podfile.lock
+.idea
+*.lock

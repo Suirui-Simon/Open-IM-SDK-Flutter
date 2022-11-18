@@ -166,11 +166,11 @@ public class ConversationManager extends BaseManager {
     }
 
     public void setOneConversationBurnDuration(MethodCall methodCall, MethodChannel.Result result) {
-        Open_im_sdk.setOneConversationBurnDuration(
-                new OnBaseListener(result, methodCall),
-                value(methodCall, "operationID"),
-                value(methodCall, "conversationID"),
-                value(methodCall, "burnDuration")
-        );
+//        Open_im_sdk.setOneConversationBurnDuration(
+//                new OnBaseListener(result, methodCall),
+//                value(methodCall, "operationID"),
+//                value(methodCall, "conversationID"),
+//                value(methodCall, "burnDuration")
+//        );
     }
 }

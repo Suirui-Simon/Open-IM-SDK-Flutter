@@ -2,6 +2,7 @@
 class ListenerType {
   static final simpleMsgListener = 'simpleMsgListener';
   static final connectListener = 'connectListener';
+  static final logListener = 'logListener';
   static final userListener = 'userListener';
   static final groupListener = 'groupListener';
   static final advancedMsgListener = 'advancedMsgListener';

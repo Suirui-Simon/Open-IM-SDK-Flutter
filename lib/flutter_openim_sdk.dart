@@ -15,6 +15,7 @@ export 'src/listener/connect_listener.dart';
 export 'src/listener/conversation_listener.dart';
 export 'src/listener/friendship_listener.dart';
 export 'src/listener/group_listener.dart';
+export 'src/listener/log_listener.dart';
 export 'src/listener/msg_send_progress_listener.dart';
 export 'src/listener/organization_listener.dart';
 export 'src/listener/signaling_listener.dart';

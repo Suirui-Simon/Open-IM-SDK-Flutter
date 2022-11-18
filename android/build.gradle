@@ -3,6 +3,13 @@ version '1.0'
 
 buildscript {
     repositories {
+//        maven {
+//            url 'http://10.10.15.164:8081/repository/maven-releases/'
+//            credentials {
+//                username 'openim'
+//                password 'suirui@123'
+//            }
+//        }
         google()
         mavenCentral()
     }
@@ -14,7 +21,10 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-        maven { url 'https://open-im-online.rentsoft.cn:51000/repository/maven2/' }
+        maven {
+            url 'http://10.10.15.164:8081/repository/maven-releases/'
+        }
+//        maven { url 'https://open-im-online.rentsoft.cn:51000/repository/maven2/' }
         google()
         mavenCentral()
     }
@@ -34,5 +44,6 @@ android {
     }
 }
 dependencies {
-    api 'io.openim:core-sdk:2.3.4-rc4@aar'
+//    api 'io.openim:core-sdk:2.3.4-rc4@aar'
+    implementation 'io.openim:core-sdk:1.0.0@aar'
 }

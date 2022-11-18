@@ -4,6 +4,7 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.openim.flutter_openim_sdk.listener.OnBaseListener;
 import io.openim.flutter_openim_sdk.listener.OnConnListener;
+import io.openim.flutter_openim_sdk.listener.OnLogListener;
 import io.openim.flutter_openim_sdk.util.CommonUtil;
 import open_im_sdk.Open_im_sdk;
 
@@ -12,6 +13,7 @@ public class IMManager extends BaseManager {
     public void initSDK(MethodCall methodCall, MethodChannel.Result result) {
         CommonUtil.runMainThreadReturn(result, Open_im_sdk.initSDK(
                 new OnConnListener(),
+                new OnLogListener(),
                 value(methodCall, "operationID"),
                 jsonValue(methodCall))
         );
